@@ -82,6 +82,7 @@ export default {
                 else if (refComp instanceof HTMLElement) target = refComp;
                 return target;
             })
+        el.style.position = 'fixed';
         el.addEventListener(isMobile ? 'touchstart' : 'mousedown', _downEvent.bind(this, el, resEls), false);
         window.addEventListener(isMobile ? 'touchmove' : 'mousemove', _moveEvent.bind(this, el, resEls), false);
         window.addEventListener(isMobile ? 'touchend' : 'mouseup', _upEvent.bind(this, el, resEls), false);

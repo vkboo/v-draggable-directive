@@ -26,7 +26,6 @@ export default {
 
 <style lang="scss" scoped>
 .target {
-  position: fixed;
   width: 100px;
   height: 100px;
   background: #ff0000;
